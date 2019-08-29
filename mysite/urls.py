@@ -17,7 +17,7 @@ urlpatterns = [
 	path('chain',views.chain,name="chain"),
 	path('pro',views.pro,name="pro"),
 	path('signup',views.signup,name="signup"),
-	path('^oauth/', include('social_django.urls', namespace='social')),
+	# path('^oauth/', include('social_django.urls', namespace='social')),
     path('accounts/',include('django.contrib.auth.urls')),
     
     path('admin/', admin.site.urls),
