@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<center>
+
+<h1>Bot Trading</h1>
+<h2>Welcome to MySite,{% if user.is_authenticated %}{{ user.username }}{% else %}plese login to choose bots{% endif %}</h2>
+
+<p>
+	<strong>Total Users Registred:</strong>{{ count }}
+</p>
+
+</center>
+<img src="static/image/guy.png" width ="500" height="400" align="right">
+<img src="static/image/tr.png" width ="500" height="400" align="left">
+
+{% endblock %}
+
